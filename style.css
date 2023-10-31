@@ -1,0 +1,357 @@
+/* GENERAL */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'SoDoSans-Regular', Helvetica Neue,Helvetica,Arial,sans-serif;
+
+}
+
+/* banner */
+.banner-wrapper {
+    background-color: maroon; 
+    text-align: center;
+    padding: 50px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 95%;
+    height: 200px;
+    background-image: url('images/sinterklaas-bellen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-h3 {
+    color: white;
+    font-size: 30px;
+}
+.contact-p {
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width:600px) {
+    .banner{
+        max-width: 100%;
+        border-radius: 0px;
+    }
+
+    .banner-wrapper{
+        padding: 0;
+    }
+}
+
+/* HEADER */
+
+.divider {
+    border-top: 1px solid #ccc; /* Thin gray line */
+  }
+  
+
+/* MAIN */
+main {
+    /* background-image: url('images/pepernoten.jpeg'); */
+    background-size: cover;
+    max-height: calc(100vh - 20%);
+    overflow-y: auto;
+    padding: 1%;
+    
+}
+
+
+/* FOOTER */
+footer {
+    max-height: 50px;
+    background-color: #990000;
+    color: white;
+    display:    flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    /* margin: auto 100px; */
+}
+
+.navbar-fix {
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    z-index: 2;
+}
+
+/* TOP NAVIGATION BAR */
+.navbar img {
+    width: 50px;
+    height: auto;
+    padding: 20px;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    padding-left: 5em;
+}
+.navbar-left > * {
+    padding: 10px;
+    max-height: 6em;
+}
+
+@media screen and (max-width:500px) {
+    .navbar img{
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    .navbar-left {
+        padding-left: 0;
+        justify-content: center;
+    }
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: #990000;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+
+
+/* CONTACT FORM */
+
+
+/* TEXT */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.container {
+    margin: 20px;
+}
+
+
+/* HIDDEN SUCCES MESSAGE */
+.success-message {
+    display:none;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: green;
+    color: white;
+}
+
+/* HIDDEN ERROR MESSAGE */
+.error-message {
+    display:none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: small;
+    background-color: red;
+    color: white;
+}
+
+/* Big square form */
+.contact-form {
+    max-width: calc(100vh - 25%);
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid maroon;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Input field */
+.input-control input {
+    padding: 10px;
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 0px;
+    height: 25px;
+
+}
+
+.input-control {
+    position: relative; 
+}
+
+/* Placeholder inside the field */
+.input-control span {
+    position: absolute;
+    padding: 14px;
+    font-size: 14px;
+    color: grey;
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.input-control select{
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+    color: grey;
+    appearance: none;
+    border: 1px solid grey;
+    border-radius: 0px;
+    height: 45px;
+
+}
+.input-control textarea {
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+    color: grey;
+    appearance: none;
+    border: 1px solid grey;
+    border-radius: 0px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.names-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.names-container div {
+    width: 100%;
+}
+
+@media screen and (max-width: 515px) {
+
+    .names-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+    }
+    .button {
+        width: 50%
+    }
+
+}
+
+.input-control input:focus,
+.input-control input:valid {
+    border: 1px solid goldenrod;
+}
+
+.input-control input:focus ~ span,
+.input-control input:valid ~ span {
+    transform: translateX(20px) translateY(-8px);
+    font-size: 0.65em;
+    background-color: white;
+    padding: 0px 6px;
+}
+
+input[type="text"] {
+    font-family: 'SoDoSans-Regular', Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.input-control textarea {
+    font-family: 'SoDoSans-Regular', Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+
+.input-control select:valid {
+    font-family: 'SoDoSans-Regular', Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline:none;
+}
+
+.select-style {
+    background-color: white;
+}
+
+.select-style:valid,
+.select-style:focus,
+.message:valid,
+.message:focus {
+    border: 1px solid goldenrod;
+}
+
+.input-control textarea:focus ~ span,
+.input-control textarea:valid ~ span  {
+    transform: translateX(20px) translateY(-8px);
+    font-size: 0.65em;
+    background-color: white;
+    padding: 0px 6px;
+}
+
+.button {
+    width: 35%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #990000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+  }
+
+.button:hover {
+    background-color: goldenrod;
+}
+
+
+.p-small {
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    font-size: 12px; 
+    margin-top: 2em;
+}
+
+.p-small:hover {
+    color: goldenrod;
+}
+
+p {
+    color: grey;
+}

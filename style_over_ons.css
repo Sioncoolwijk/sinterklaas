@@ -1,0 +1,231 @@
+
+
+.span {
+    background-color: goldenrod;
+    padding: 8px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+.span:hover {
+    color: maroon !important;
+}
+
+
+/* banner */
+.main {
+    background-color: whitesmoke;
+}
+
+.banner-wrapper {
+    background-color: maroon; /* Text color */
+    text-align: center;
+    padding: 50px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 95%;
+    height: 400px;
+    background-image: url('images/sinterklaas-open-armen.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+.inside-banner {
+    position: absolute; 
+    top: 18em;
+    left: 10em;
+    z-index: 1;
+    text-align: left;
+  }
+
+.contact-h3 {
+    color: white;
+    font-size: 30px;
+}
+.contact-p {
+    color: white;
+    font-size: 15px;
+}
+
+.offerte-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 10em;
+  }
+
+.offerte-button:hover {
+    background-color: #992000;
+}
+
+
+.offerte-button-2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 10em;
+    margin-bottom:20px;
+    background-color:white;
+    color:maroon;
+    border: 1px solid maroon;
+}
+
+.offerte-button-2:hover {
+    color: white;
+    background-color: maroon;
+}
+
+
+
+.container-over-ons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 50%;
+    border: solid 1px maroon;
+
+}
+
+@media screen and (max-width:1000px) {
+    .container-over-ons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        padding: 20px;
+        max-width: 85%;
+        border-radius: 5px;
+        background-color: white;
+        border: solid 1px maroon;
+    }
+    h1,h2,h3,h4 {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .inside-banner {
+        left: 0;
+        align-items: center;
+        width: 400px;
+        justify-content: center;
+        text-align: center;
+    }
+    .banner{
+        max-width: 100%;
+        border-radius: 0px;
+
+    }
+
+    .banner-wrapper{
+        padding: 0;
+    }
+
+    .contact-h3 {
+        color: white;
+        font-size: 20px;
+    }
+    .contact-p {
+        color: white;
+        font-size: 14px;
+    }
+
+    .review {
+        max-width: 80% !important;
+    }
+}
+
+.img-handtekening {
+    width: 12em;
+    height: 6em;
+    margin: 10px auto;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.member-photo {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px; 
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+
+.review-wrapper {
+   background-color: whitesmoke;
+   padding: 10px;
+   text-align: center;
+}
+
+.review {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.star {
+    width: 35px;
+    height: 35px;
+    fill: #FFD700;
+    margin-right: 5px;
+}
