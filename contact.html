@@ -137,11 +137,15 @@
     
     </footer>
 
+<script type="text/javascript">
+var urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has("success")) {
+    var successMessage = document.getElementById("success-message");
+    successMessage.style.display = "block";
+}
+</script>
 
 </body>
-
-
-
 
 </html>
 
