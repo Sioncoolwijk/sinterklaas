@@ -7,7 +7,7 @@
     $postcode = $_POST['postcode'];
     $stad = $_POST['stad'];
     $telefoonnummer = $_POST['telefoonnummer'];
-    $selecteer_datum = $_POST['selecteer'];
+    $selecteer_datum = $_POST['datum'];
     $myTextarea = $_POST['myTextarea'];
 
     $conn = new mysqli('dbhost','dbuser','password','dbname');
@@ -19,7 +19,7 @@
         $stmt->execute();
         $stmt->close();
         $conn->close();
-        header('Location: contact.html');
+        header('Location: contact.html?succes=true');
         exit();
 
     }
