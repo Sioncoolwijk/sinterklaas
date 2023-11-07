@@ -41,17 +41,6 @@ function sendEmail() {
   }
   errorMessage.style.display = "none"; 
 
-  var successMessage = document.getElementById("success-message");
-  successMessage.style.display = "block";
-
-  // Clear all input fields
-  var elementIdsAll = ['email', 'voornaam', 'achternaam', 'adres', 'toevoeging', 'postcode', 'stad', 'telefoonnummer', 'datum'];
-  elementIdsAll.forEach(function (elementId) {
-    var element = document.getElementById(elementId);
-    element.value = ''; // Set the value to an empty string
-  });
-
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
-  button.style.backgroundColor = "#990000";
+  document.getElementById("form").submit();
 
 };
