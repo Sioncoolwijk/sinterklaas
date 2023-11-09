@@ -63,7 +63,7 @@ body {
 main {
     /* background-image: url('images/pepernoten.jpeg'); */
     background-size: cover;
-    max-height: calc(100vh - 20%);
+    max-height: calc(60em - 20%);
     overflow-y: auto;
     padding: 1%;
     
