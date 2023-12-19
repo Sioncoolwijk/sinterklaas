@@ -11,7 +11,7 @@ Welcome to our Sinterklaas Home Visit Request website! This website allows Dutch
 - Get Your Quote: After submission, our team will get in touch to provide a personalized quote and coordinate all the details for the Sinterklaas visit. 
 
 ### Collaboration Notice
-This project is copyrighted and all rights are reserved. If you'd like to use parts of the code, please reach out to us at sintenpietcontact@gmail.com.
+This project is copyrighted and all rights are reserved. If you'd like to use parts of the code, please reach out to me at sioncoolwijk@hotmail.com.
 
 ### Preview
 https://github.com/Sioncoolwijk/sinterklaas/assets/70899366/c376c686-08ff-496b-ab10-e14a21e886b7
