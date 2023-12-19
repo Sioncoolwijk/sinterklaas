@@ -10,7 +10,7 @@ Welcome to our Sinterklaas Home Visit Request website! This website allows Dutch
 - Submit Your Request: The contact details are securely sent to our database using PHP. To make it work, you only need to fill in the necessary database parameters in the connect.php script.
 - Get Your Quote: After submission, our team will get in touch to provide a personalized quote and coordinate all the details for the Sinterklaas visit. 
 
-### Legal Notice
+### Collaboration Notice
 This project is copyrighted and all rights are reserved. If you'd like to use parts of the code, please reach out to us at sintenpietcontact@gmail.com.
 
 ### Preview
